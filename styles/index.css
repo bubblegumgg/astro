@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4b0082;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color:#FFD700;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  font-family: 'Cardo', serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #4b0082, #6a0dad);
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 4rem;
+  margin: 0;
+  background: linear-gradient(90deg, #FFD700, #cc962e); /* 金色渐变 */
+  -webkit-background-clip: text; /* 仅裁剪文字 */
+  -webkit-text-fill-color: transparent; /* 填充透明，让背景透出 */
+}
+
+.hero p {
+  font-family: 'Cormorant Garamond', serif; 
+  font-size: 2em;
+  background: linear-gradient(90deg, #aaaaaa, #ffffff); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+/* 卡片 */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3{
+  font-family: 'Caudex', serif; 
+  font-size: 1.5em;
+}
+
+.card p{
+  font-family: 'Crimson Text', serif; 
+  font-size: 1.2em;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 星座图标 */
+#zodiac {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Cormorant Garamond', serif; 
+}
+
+.zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.zodiac-icon {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.zodiac-icon p{
+  font-family: 'Caudex', serif; 
+  font-size: 1.2em;
+}
+
+.zodiac-icon:hover {
+  transform: scale(1.2);
+}
+
+/* 弹窗 */
+#zodiac-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 10px;
+  display: none; 
+}
+
+#zodiac-modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  text-align: center;
+}
+
+.modal-content h2{
+   font-family: 'Almendra', serif;
+   font-size: 2em;
+}
+
+.modal-content p{
+   font-family: 'Caudex', serif;
+   font-size: 1em;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.zodiac-image {
+  max-width: 300px; 
+  max-height: 300px; 
+  margin-bottom: 10px; 
+  object-fit: cover; 
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+

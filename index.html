@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art of Astrology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:wght@600&family=Pirata+One&family=UnifrakturCook:wght@700&family=Crimson+Text:wght@600&family=Caudex:wght@700&family=IM+Fell+English:wght@600&family=Cardo:wght@700&family=Almendra:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="logo">Astrology</div>
+    <nav>
+      <ul>
+        <li><a href="#cards">Log in</a></li>
+        <li><a href="#zodiac">Sign up</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 大标题 -->
+  <section class="hero">
+    <h1>The Art of Astrology</h1>
+    <p>Discover the mysteries of the stars ✦</p>
+  </section>
+
+  <!-- 卡片 -->
+  <section id="cards">
+    <div class="card" onclick="location.href='emotion.html'">
+      <img src="imgs/1.webp"alt="1">
+      <h3>Predict Your Emotion</h3>
+      <p>Let the stars guide your mood</p>
+    </div>
+    <div class="card" onclick="location.href='page1.html'">
+      <img src="imgs/2.webp"alt="2">
+      <h3>Astrology Basics</h3>
+      <p>Learn the fundamentals of astrology</p>
+    </div>
+    <div class="card" onclick="location.href='page2.html'">
+      <img src="imgs/3.webp"alt="3">
+      <h3>Stars and Houses</h3>
+      <p>Understand influences of stars</p>
+    </div>
+    <div class="card" onclick="location.href='page3.html'">
+      <img src="imgs/4.webp"alt="4">
+      <h3>Horoscopes</h3>
+      <p>Read your own birthchart</p>
+    </div>
+  </section>
+
+  <!-- 12星座图标 -->
+  <section id="zodiac">
+    <h2>Zodiac Signs</h2>
+    <div class="zodiac-grid">
+      <div class="zodiac-icon" data-sign="Aquarius">
+        <img src="imgs/Aquarius.jpg" alt="Aquarius">
+        <p>Aquarius</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Aries">
+        <img src="imgs/Aries.jpg" alt="Aries">
+        <p>Aries</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Cancer">
+        <img src="imgs/Cancer.jpg" alt="Cancer">
+        <p>Cancer</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Capricorn">
+        <img src="imgs/Capricorn.jpg" alt="Capricorn">
+        <p>Capricorn</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Gemini">
+        <img src="imgs/Gemini.jpg" alt="Gemini">
+        <p>Gemini</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Leo">
+        <img src="imgs/Leo.jpg" alt="Leo">
+        <p>Leo</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Libra">
+        <img src="imgs/Libra.jpg" alt="Libra">
+        <p>Libra</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Pisces">
+        <img src="imgs/Pisces.jpg" alt="Pisces">
+        <p>Pisces</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Sagittarius">
+        <img src="imgs/Sagittarius.jpg" alt="Sagittarius">
+        <p>Sagittarius</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Scorpio">
+        <img src="imgs/Scorpio.jpg" alt="Scorpio">
+        <p>Scorpio</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Taurus">
+        <img src="imgs/Taurus.jpg" alt="Taurus">
+        <p>Taurus</p>
+      </div>
+      <div class="zodiac-icon" data-sign="Virgo">
+        <img src="imgs/Virgo.jpg" alt="Virgo">
+        <p>Virgo</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- 弹窗部分 -->
+  <div id="zodiac-modal" class="hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn">×</span>
+      <div id="zodiac-info"></div>
+    </div>
+  </div>
+
+  <footer>Copyright © Van Art All Rights Reserved. 2003-2024</footer>
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>

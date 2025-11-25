@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro Chart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:wght@600&family=Pirata+One&family=UnifrakturCook:wght@700&family=Crimson+Text:wght@600&family=Caudex:wght@700&family=IM+Fell+English:wght@600&family=Cardo:wght@700&family=Almendra:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/emotion.css">
+</head>
+<body>
+
+   <!-- 导航栏 -->
+  <header>
+    <a href="index.html" class="logo">Astrology</a>
+    <nav>
+      <ul>
+        <li><a href="#cards">Log in</a></li>
+        <li><a href="#zodiac">Sign up</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="content">
+    <h1>Explore your astro chart</h1>
+    <form id="birthdate-form">
+      <label for="birthdate">Please enter your birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+      <button type="submit">Result</button>
+    </form>
+  </div>
+
+  <!-- 弹窗 -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Your future emotion</h2>
+      <canvas id="star-chart"></canvas>
+      <p id="emotion-result"></p>
+      <p id="analysis"></p>
+      <button id="close-modal">Close</button>
+    </div>
+    <div class="stickers"></div> <!-- 贴纸 -->
+  </div>
+
+  <script src="scripts/emotion.js"></script>
+</body>
+</html>
